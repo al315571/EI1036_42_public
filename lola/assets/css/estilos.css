@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+		body{
+			font-family: 'Noto Sans JP', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* INICIO ESTILOS DE LA BARRA DE NAVEGACION  */
+		.navbar {
+			width: 100%;
+		    padding-top: 20px;
+		    padding-bottom: 20px;
+		    background-color: #1C5679;
+		}
+
+		.logo {
+			margin-left: 20px;
+			width: 5%;
+			display: inline-block;
+		}
+
+		.logo h3 {
+			color: white;
+			margin-left: 10px;
+		}
+
+		.navbar ul {
+			width: 90%;
+			display: inline-block;
+			text-align: right;
+		}
+
+		.navbar ul li {
+			color: white;
+			display:inline-block;
+			margin-left: 15px;
+		}
+		a, a:hover, a:focus, a:active {
+		      text-decoration: none;
+		      color: inherit;
+		}
+		/* FIN ESTILOS DE BARRA DE NAVEGACION */
+
+		/* ESTILOS HEADER */
+		.fondo {
+			position: relative;
+		}
+
+		.car-imagen {
+			width: 100%;
+			height: 500px;
+			
+		}
+
+		.contenido h1{
+			position: absolute;
+			z-index: 1;
+    		display:table;
+    		width:100%;
+    		height:80%;
+    		font-size: 40px;
+
+		}
+
+		.car-texto {
+			position: absolute;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		}
+
+		.car-titulo {
+			padding-top: 200px; 
+			display:table-cell;
+		    vertical-align: middle;
+		    text-align:center;
+		    position:relative;
+		}
+
+		/* FIN ESTILOS HEADER */
+		/* ESTILOS CONTENIDO CENTRAL*/
+		.content {
+			width: 100%;
+		}
+
+		.cuadros {
+			width: 100%;
+			display:inline-block;
+			position: relative;
+			text-align: center;
+		}
+
+		.cuadro {
+			width: 20%;
+			display:inline-block;
+			background: blue;
+			margin-left: 20px;
+			height: 100px;
+		}
+
+		.tabla {
+			width: 100%;
+			display: inline-block;
+		}
+
+		.proyectos {
+			background: #ebedef;
+		}
+
+		.tabla-65 {
+			width: 64%;
+			display: inline-block
+		}
+		.tabla-35 {
+			width: 35%;
+			display: inline-block
+		}
+
+		.titulo {
+			margin-left: 30px;
+			font-size: 40px;
+			padding-top: 30px;
+		}
+
+		.subtitulo {
+			font-size: 30px;
+			margin-left: 40px;
+		}
+
+		.text {
+			margin-left: 50px;
+		}
+		/* FIN ESTILOS CONTENIDO CENTRAL*/
+
+		/* ESTILOS PIE DE PAGINA */
+		footer {
+			position: absolute;
+			position: fixed;
+			color: white;
+		  	bottom: 0;
+		  	text-align: center;
+			width: 100%;
+			padding-top: 20px;
+		    padding-bottom: 20px;
+			background: #1C5679;
+		}
+		/* FIN ESTILOS PIE DE PAGINA */
+
+		/* ESTILOS FORMULARIO */
+		
+	 	label {
+		    display: block;
+		    padding-left: 15px;
+		    text-indent: -15px;
+		    padding-bottom: 4px;
+		}
+		 
+		input[type=text], input[type=email], input[type=password] {
+		    padding: 0;
+		    margin:0;
+		    vertical-align: bottom;
+		    position: relative;
+		    top: -1px;
+		    *overflow: hidden;
+		    width: 20%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+
+		input[type=submit], input[type=reset] {
+			background-color: #466CA6;
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-decoration: none;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover, input[type=reset]:hover {
+			background-color: #1D4D9F;
+		}
+
+		input:focus {
+		  border: 2px solid #555;
+		}
+
+	 	.agrupado {
+	 		padding-top: 10px;
+	 		text-align: center;
+	 	}
+	 	/* FIN ESTILOS FORMULARIO */
