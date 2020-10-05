@@ -4,10 +4,10 @@
 define('DB_NAME', '***');
 
 /** Fatabase username */
-define('DB_USER', '***');
+define('al315571', '***');
 
 /** Database password */
-define('DB_PASSWORD', '***');
+define('26111979odoo', '***');
 
 /** Database hostname */
 define('DB_HOST', "db-aules.uji.es");

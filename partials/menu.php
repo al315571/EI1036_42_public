@@ -4,7 +4,7 @@
 			<a href="./portal.php?action=home&nombre=usuario">Home</a>
 		</li>
 		<li>
-			<a href="crearTabla.php">CrearTabla</a>
+			<a href="./crearTabla.php">CrearTabla</a>
 		</li>
 		
 
