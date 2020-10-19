@@ -3,16 +3,6 @@
 <head>
 	<title> Mascarum - Productos </title>
 	 <link rel="stylesheet" href="assets/css/estilos.css">
-	 <style type="text/css">
-	 	.tabla-30 {
-	 		width: 15%;
-	 		display: inline-block;
-	 		margin-left: 40px;
-	 		margin-right: 40px;
-	 		padding-top: 20px;
-	 		text-align: center;
-	 	}
-	 </style>
 </head>
 <body>
 	<?php include 'includes/nav.php'; ?>
@@ -21,12 +11,84 @@
 		<h1 class="titulo">Productos</h1>
 		<section class="productos">
 			<div class="tabla"> 
-				<div class="tabla-30"><p>ESPAÑA</p></div>
-				<div class="tabla-30"><p>ESPAÑA</p></div>
-				<div class="tabla-30"><p>ESPAÑA</p></div>
-				<div class="tabla-30"><p>ESPAÑA</p></div>
-				<div class="tabla-30"><p>ESPAÑA</p></div>
-				<div class="tabla-30"><p>ESPAÑA</p></div>
+				<div class="tabla-30">
+					<div class="producto">
+						<div class="cabecera-producto">
+							<img src="./assets/img/mascarilla.jpg" class="img-producto">
+						</div>
+						<div class="cuerpo-producto">
+							<h3>Producto 1</h3>
+							<input type="submit" class="clasico" value="Añadir">
+						</div>
+					</div>
+				</div>
+				<div class="tabla-30">
+					<div class="producto">
+						<div class="cabecera-producto">
+							<img src="./assets/img/mascarilla.jpg" class="img-producto">
+						</div>
+						<div class="cuerpo-producto">
+							<h3>Producto 1</h3>
+							<a href="acciones/carrito.php?accion=insertar&cliente=5&producto=1"><input class="clasico" type="submit" value="Añadir"></a>
+						</div>
+					</div>
+				</div>
+				<div class="tabla-30">
+					<div class="producto">
+						<div class="cabecera-producto">
+							<img src="./assets/img/mascarilla.jpg" class="img-producto">
+						</div>
+						<div class="cuerpo-producto">
+							<h3>Producto 1</h3>
+							<input type="submit" class="clasico" value="Añadir">
+						</div>
+					</div>
+				</div>
+				<div class="tabla-30">
+					<div class="producto">
+						<div class="cabecera-producto">
+							<img src="./assets/img/mascarilla.jpg" class="img-producto">
+						</div>
+						<div class="cuerpo-producto">
+							<h3>Producto 1</h3>
+							<input type="submit" class="clasico" value="Añadir">
+						</div>
+					</div>
+				</div>
+				<div class="tabla-30">
+					<div class="producto">
+						<div class="cabecera-producto">
+							<img src="./assets/img/mascarilla.jpg" class="img-producto">
+						</div>
+						<div class="cuerpo-producto">
+							<h3>Producto 1</h3>
+							<input type="submit" class="clasico" value="Añadir">
+						</div>
+					</div>
+				</div>
+				<div class="tabla-30">
+					<div class="producto">
+						<div class="cabecera-producto">
+							<img src="./assets/img/mascarilla.jpg" class="img-producto">
+						</div>
+						<div class="cuerpo-producto">
+							<h3>Producto 1</h3>
+							<input type="submit" class="clasico" value="Añadir">
+						</div>
+					</div>
+				</div>
+				<div class="tabla-30">
+					<div class="producto">
+						<div class="cabecera-producto">
+							<img src="./assets/img/mascarilla.jpg" class="img-producto">
+						</div>
+						<div class="cuerpo-producto">
+							<h3>Producto 1</h3>
+							<input type="submit" class="clasico" value="Añadir">
+						</div>
+					</div>
+				</div>
+				
 			</div>			
 		</section>
 	</div>

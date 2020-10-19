@@ -94,9 +94,17 @@
 		.cuadro {
 			width: 20%;
 			display:inline-block;
-			background: blue;
+			border: 1px solid #d0d0d0;
 			margin-left: 20px;
-			height: 100px;
+			height: 200px;
+		}
+
+		.cuadro h1 {
+			padding-top: 10px;
+		}
+
+		.cuadro img {
+			padding-top: 20px;
 		}
 
 		.tabla {
@@ -133,6 +141,34 @@
 		}
 		/* FIN ESTILOS CONTENIDO CENTRAL*/
 
+		/* ESTILOS PRODUCTOS */
+		.tabla-30 {
+	 		width: 15%;
+	 		display: inline-block;
+	 		margin-left: 40px;
+	 		margin-right: 40px;
+	 		padding-top: 20px;
+	 		text-align: center;
+	 	}
+
+	 	.producto {
+	 		width: 100%;
+	 		border: 1px solid #d0d0d0;
+	 	}
+
+	 	.img-producto {
+	 		width: 100%;
+	 	}
+
+	 	.cuerpo-producto h3 {
+	 		text-align: left;
+	 	}
+
+	 	.cuerpo-producto input {
+	 		text-align: right;
+	 	}
+		/* FIN ESTILOS PRODUCTOS */
+
 		/* ESTILOS PIE DE PAGINA */
 		footer {
 			position: absolute;
@@ -148,7 +184,7 @@
 		/* FIN ESTILOS PIE DE PAGINA */
 
 		/* ESTILOS FORMULARIO */
-		
+	
 	 	label {
 		    display: block;
 		    padding-left: 15px;
@@ -169,7 +205,29 @@
 			border-radius: 4px;
 		}
 
-		input[type=submit], input[type=reset] {
+		input:focus {
+		  border: 2px solid #555;
+		}
+
+	 	.agrupado {
+	 		padding-top: 10px;
+	 		text-align: center;
+	 	}
+
+	 	.eliminar {
+			background-color: #D36E70;
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-decoration: none;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		.eliminar:hover, .eliminar:hover {
+			background-color: #D32B02;
+		}
+
+		.clasico {
 			background-color: #466CA6;
 			border: none;
 			color: white;
@@ -179,16 +237,8 @@
 			cursor: pointer;
 		}
 
-		input[type=submit]:hover, input[type=reset]:hover {
+		.clasico:hover, .clasico:hover {
 			background-color: #1D4D9F;
 		}
 
-		input:focus {
-		  border: 2px solid #555;
-		}
-
-	 	.agrupado {
-	 		padding-top: 10px;
-	 		text-align: center;
-	 	}
 	 	/* FIN ESTILOS FORMULARIO */

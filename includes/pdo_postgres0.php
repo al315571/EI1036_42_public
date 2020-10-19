@@ -18,7 +18,6 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-$testeamos="asdasda";
 global $pdo;
 $pdo = new PDO("pgsql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
 /* query y valor pueden ser nulos, o sea no pasarse como parรกmetros */

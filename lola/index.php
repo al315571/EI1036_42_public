@@ -12,13 +12,16 @@
 			<h1 class="titulo"> Mascarum - Tienda online </h1>
 			<div class="cuadros">
 				<div class="cuadro">
-					<h1>Hola</h1> 
+					<h1><b>Detenemos</b> la transmisión</h1>
+					<img src="assets/img/detenemos.png">
 				</div>
 				<div class="cuadro">
-					<h1>Hola</h1>
+					<h1><b>Reforzamos</b> la prevención</h1>
+					<img src="assets/img/reforzamos.png">
 				</div>
 				<div class="cuadro">
-					<h1>Hola</h1>
+					<h1><b>Reducimos</b> contagios</h1>
+					<img src="assets/img/reducimos.png">
 				</div>
 			</div>
 		</section>

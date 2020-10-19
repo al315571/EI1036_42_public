@@ -32,7 +32,7 @@
 					<input type="text" name="foto" placeholder="foto">
 				</div>
 				<div class="agrupado"> 
-					<input type="submit" name="enviar">
+					<input type="submit" class="clasico" value="enviar">
 				</div>
 			</form>
 		</section>

@@ -25,7 +25,7 @@ function handler($pdo,$table)
 
 $table = "a_cliente";
 var_dump($_POST);
-echo $testeamos;
+
 
 handler( $pdo,$table);
 ?>

@@ -5,5 +5,6 @@
 		<li><a href="productes.php">Productos</a></li>
 		<li><a href="quienessomos.php">Quienes somos</a></li>
 		<li><a href="registre.php">Registro</a></li>
+		<li><a href="carrito.php">Carrito</a></li>
 	</ul>
 </nav>
