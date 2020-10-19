@@ -1,13 +1,13 @@
 <?php
 
 /** The name of the database  */
-define('DB_NAME', '***');
+define('DB_NAME', 'al315571_ei1036_42');
 
 /** Fatabase username */
-define('al315571', '***');
+define('DB_USER', 'al315571');
 
 /** Database password */
-define('26111979odoo', '***');
+define('DB_PASSWORD', '73393348A');
 
 /** Database hostname */
 define('DB_HOST', "db-aules.uji.es");
@@ -18,11 +18,13 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-
+$testeamos="asdasda";
+global $pdo;
+$pdo = new PDO("pgsql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
 /* query y valor pueden ser nulos, o sea no pasarse como parรกmetros */
 function ejecutarSQL($query,$valor) {
-
-	global $pdo;
+	
+	
 	
 	try{
 		if (!isset($pdo)) $pdo = new PDO("pgsql:host=".DB_HOST.";dbname=".DB_NAME,DB_USER,DB_PASSWORD);

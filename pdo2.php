@@ -1,14 +1,14 @@
 <?php
-        header('Content-Type: application/json');
+header('Content-Type: application/json');
 
 /** The name of the database */
-define('DB_NAME', 'ei1036_42');
+define('DB_NAME', 'al315571_ei1036_42');
 
 /** MySQL database username */
-define('DB_USER', '*****');
+define('DB_USER', 'al315571');
 
 /** MySQL database password */
-define('DB_PASSWORD', '*****');
+define('DB_PASSWORD', '73393348A');
 
 /** MySQL hostname */
 define('DB_HOST', 'db-aules.uji.es' );
@@ -18,7 +18,7 @@ define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
-
+global $pdo;
 $pdo = new PDO("pgsql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASSWORD);
 
 function ejecutarSQL($pdo,$table,$query,$valor) {

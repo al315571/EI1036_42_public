@@ -30,11 +30,8 @@ switch ($action) {
     case "registro":
          $central = "/partials/registerForm.php";
         break;
-	case "registro_mod":
-         $central = "/includes/registrar_mod.php";
-        break;
     case "listar":
-        $query = "SELECT     * FROM       $table ";
+        $query = "SELECT * FROM $table ";
         $rows=ejecutarSQL($query,NULL);
         if (is_array($rows)) {/* Creamos un listado como una tabla HTML*/
             print '<table><thead>';

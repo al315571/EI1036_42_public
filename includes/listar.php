@@ -1,10 +1,10 @@
 <?php
 
-include("./gestionBD.php");
+include("pdo_postgres0.php");
 function handler($pdo,$table)
 {
     
-    $rows=consultar($pdo,$table);
+    $rows=ejecutarSQL($pdo,$table);
    
     if (is_array($rows)) {/* Creamos un listado como una tabla HTML*/
         print '<table><thead>';

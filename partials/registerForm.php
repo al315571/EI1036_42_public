@@ -1,48 +1,32 @@
 <main>
 	<h1>GestiÓn de Usuarios </h1>
-	<form class="fom_usuario" action="?action=registrar" method="POST">
+	<form class="fom_usuario" action="./includes/registrar.php" method="POST">
 
 		<legend>Datos básicos</legend>
-		<label for="nombre">name</label>
+		<label for="nombre">Nombre</label>
 		<br/>
-		<input type="text" name="userName" class="item_requerid" size="50" maxlength="50" value="<?php print $userName ?>"
-		 placeholder="Miguel" />
+		<input type="text" name="nombre" class="item_requerid" size="20" maxlength="25" placeholder="Miguel" />
 		<br/>
-		<label for="nombre">surname</label>
+		<label for="apellidos">Apellidos</label>
 		<br/>
-		<input type="text" name="surName" class="item_requerid" size="50" maxlength="50" value="<?php print $userName ?>"
-		 placeholder="Cervantes" />
+		<input type="text" name="apellidos" class="item_requerid" size="20" maxlength="25" placeholder="Cervantes" />
 		<br/>
-		<label for="nombre">address</label>
+		<label for="direccion">Dirección</label>
 		<br/>
-		<input type="text" name="addressName"  size="50" maxlength="50" value="<?php print $userName ?>"
-		 placeholder="Camí D´Onda, 51" />
+		<input type="text" name="direccion" class="item_requerid" size="20" maxlength="25" placeholder="Avenida de la universitat" />
 		<br/>
-		<label for="nombre">city</label>
+		<label for="ciudad">Ciudad</label>
 		<br/>
-		<input type="text" name="city"  size="50" maxlength="50" value="<?php print $userName ?>"
-		 placeholder="Borriana" />
+		<input type="text" name="ciudad" class="item_requerid" size="20" maxlength="25" placeholder="Castellon de la plana" />
 		<br/>
-		<label for="nombre">zip_code</label>
+		<label for="cp">Codigo Postal</label>
 		<br/>
-		<input type="text" name="zip_codeName" size="5" maxlength="5" value="<?php print $userName ?>"
-		 placeholder="12530"/>
+		<input type="text" name="cp" class="item_requerid" size="20" maxlength="25" placeholder="12006" />
 		<br/>
-		<label for="nombre">foto_file</label>
+		<label for="foto">foto</label>
 		<br/>
-		<a href="https://static.zara.net/photos///contents/mkt/spots/aw20-north-new-in-woman/subhome-xmedia-40//w/1024/landscape_0.jpg?ts=1601651911788.zara.com">Enlace</a>
-		</br>
-		<!--
-		<label for="email">Email</label>
+		<input type="text" name="foto" class="item_requerid" size="20" maxlength="25" placeholder="foto" />
 		<br/>
-		<input type="text" name="email" class="item_requerid" size="20" maxlength="25" value="<?php print $email ?>"
-		 placeholder="kiko@ic.es" />
-		<br/>
-		<label for="passwd">Clave</label>
-		<br/>
-		<input type="password" name="passwd" class="item_requerid" size="8" maxlength="25" value="<?php print $passwd ?>"
-		/>
-		<br/>-->
 		<p><input type="submit" value="Enviar">
 		<input type="reset" value="Deshacer">
 		</p>
