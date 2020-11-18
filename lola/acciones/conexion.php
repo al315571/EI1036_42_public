@@ -21,7 +21,8 @@ global $pdo;
 $pdo = new PDO("pgsql:host=".DB_HOST.";dbname=".DB_NAME,DB_USER,DB_PASSWORD);
 
 function crearTablas() {
-	$productos="CREATE TABLE IF NOT EXISTS  productos (product_id int AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(50) NOT NULL, imagen VARCHAR(50) NOT NULL);";
+    global $pdo;
+	$productos="CREATE TABLE IF NOT EXISTS  productos (product_id SERIAL PRIMARY KEY, nombre VARCHAR(50) NOT NULL, imagen VARCHAR(50) NOT NULL);";
 	$carrito="CREATE TABLE IF NOT EXISTS  carrito (item_id SERIAL PRIMARY KEY, client_id int NOT NULL, product_id int NOT NULL, fecha date);";
 	try{
         $consulta_prod = $pdo->prepare($productos);
@@ -36,15 +37,19 @@ function crearTablas() {
 }
 
 function ejecutarConsultas($pdo,$query,$valor) {
+
         try{
+
             $consulta = $pdo->prepare($query);
             $result=$consulta->execute($valor);
+
         }
         catch (PDOException $e) {
             echo "Failed to get DB handle: " . $e->getMessage() . "\n";
             exit;
         }
-        return $result;
+        return ($consulta->fetchAll(PDO::FETCH_ASSOC));
+
 
 }
 

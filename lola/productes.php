@@ -7,87 +7,25 @@
 <body>
 	<?php include 'includes/nav.php'; ?>
 	<?php include 'includes/header.php'; ?>
+	<?php include 'acciones/productos.php'; 
+	$productos = listarProductos(); ?> 
 	<div class="content"> 
 		<h1 class="titulo">Productos</h1>
 		<section class="productos">
-			<div class="tabla"> 
+			<div class="tabla">
+				<?php foreach ($productos as $key => $listadoProductos) { ?>
 				<div class="tabla-30">
 					<div class="producto">
 						<div class="cabecera-producto">
-							<img src="./assets/img/mascarilla.jpg" class="img-producto">
+							<img src="<?php echo $listadoProductos['imagen']; ?>" class="img-producto">
 						</div>
 						<div class="cuerpo-producto">
-							<h3>Producto 1</h3>
-							<input type="submit" class="clasico" value="Añadir">
+							<h3><?php echo $listadoProductos['nombre']; ?></h3>
+							<a href="acciones/carrito.php?accion=insertar&client_id=5&product=<?php echo $listadoProductos['product_id']; ?>"><input type="submit" class="clasico" value="Añadir"></a>
 						</div>
 					</div>
 				</div>
-				<div class="tabla-30">
-					<div class="producto">
-						<div class="cabecera-producto">
-							<img src="./assets/img/mascarilla.jpg" class="img-producto">
-						</div>
-						<div class="cuerpo-producto">
-							<h3>Producto 1</h3>
-							<a href="acciones/carrito.php?accion=insertar&cliente=5&producto=1"><input class="clasico" type="submit" value="Añadir"></a>
-						</div>
-					</div>
-				</div>
-				<div class="tabla-30">
-					<div class="producto">
-						<div class="cabecera-producto">
-							<img src="./assets/img/mascarilla.jpg" class="img-producto">
-						</div>
-						<div class="cuerpo-producto">
-							<h3>Producto 1</h3>
-							<input type="submit" class="clasico" value="Añadir">
-						</div>
-					</div>
-				</div>
-				<div class="tabla-30">
-					<div class="producto">
-						<div class="cabecera-producto">
-							<img src="./assets/img/mascarilla.jpg" class="img-producto">
-						</div>
-						<div class="cuerpo-producto">
-							<h3>Producto 1</h3>
-							<input type="submit" class="clasico" value="Añadir">
-						</div>
-					</div>
-				</div>
-				<div class="tabla-30">
-					<div class="producto">
-						<div class="cabecera-producto">
-							<img src="./assets/img/mascarilla.jpg" class="img-producto">
-						</div>
-						<div class="cuerpo-producto">
-							<h3>Producto 1</h3>
-							<input type="submit" class="clasico" value="Añadir">
-						</div>
-					</div>
-				</div>
-				<div class="tabla-30">
-					<div class="producto">
-						<div class="cabecera-producto">
-							<img src="./assets/img/mascarilla.jpg" class="img-producto">
-						</div>
-						<div class="cuerpo-producto">
-							<h3>Producto 1</h3>
-							<input type="submit" class="clasico" value="Añadir">
-						</div>
-					</div>
-				</div>
-				<div class="tabla-30">
-					<div class="producto">
-						<div class="cabecera-producto">
-							<img src="./assets/img/mascarilla.jpg" class="img-producto">
-						</div>
-						<div class="cuerpo-producto">
-							<h3>Producto 1</h3>
-							<input type="submit" class="clasico" value="Añadir">
-						</div>
-					</div>
-				</div>
+				<?php } ?>
 				
 			</div>			
 		</section>

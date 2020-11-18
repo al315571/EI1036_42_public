@@ -34,6 +34,7 @@
 			color: white;
 			display:inline-block;
 			margin-left: 15px;
+			margin-right: 10px;	
 		}
 		a, a:hover, a:focus, a:active {
 		      text-decoration: none;
@@ -192,6 +193,18 @@
 		    padding-bottom: 4px;
 		}
 		 
+		input[type=file] {
+			padding: 0;
+		    margin:0;
+		    vertical-align: bottom;
+		    position: relative;
+		    top: -1px;
+		    *overflow: hidden;
+		    width: 70%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
 		input[type=text], input[type=email], input[type=password] {
 		    padding: 0;
 		    margin:0;
@@ -227,12 +240,29 @@
 			background-color: #D32B02;
 		}
 
+		.eliminar-small {
+			background-color: #D36E70;
+			border: none;
+			color: white;
+			width: 5%;
+			text-decoration: none;
+			cursor: pointer;
+			text-align: center;
+			border-radius: 20px;
+			float: right;
+
+		}
+		.eliminar-small:hover, .eliminar-small:hover {
+			background-color: #D32B02;
+		}
+
 		.clasico {
 			background-color: #466CA6;
 			border: none;
 			color: white;
 			padding: 16px 32px;
 			text-decoration: none;
+			text-align: center;
 			margin: 4px 2px;
 			cursor: pointer;
 		}
@@ -242,3 +272,27 @@
 		}
 
 	 	/* FIN ESTILOS FORMULARIO */
+
+	 	/* ESTILOS DE LA CAJA FLOTANTE */
+	 	.flotante {
+	 		display: none;
+	 		border-style: solid;
+	 		border-width: 2px;
+	 		width: 30%;
+	 		margin: auto;
+	 		border-radius: 20px;
+	 	}
+	 	/* FIN ESTILOS DE LA CAJA FLOTANTE */
+
+	 	/* ESTILOS CARRITO DE COMPRA */
+	 	.carrito {
+	 		display: none;
+	 		width: 30%;
+	 		position: absolute;
+	 		z-index: 3;
+	 		right:1px;
+	 		background-color: #1C5679;
+	 	}
+
+
+	 	/* FIN ESTILOS CARRITO DE COMPRA */
