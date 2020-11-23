@@ -22,7 +22,7 @@ $pdo = new PDO("pgsql:host=".DB_HOST.";dbname=".DB_NAME,DB_USER,DB_PASSWORD);
 
 function crearTablas() {
     global $pdo;
-	$productos="CREATE TABLE IF NOT EXISTS  productos (product_id SERIAL PRIMARY KEY, nombre VARCHAR(50) NOT NULL, imagen VARCHAR(50) NOT NULL);";
+	$productos="CREATE TABLE IF NOT EXISTS  productos (product_id SERIAL PRIMARY KEY, nombre VARCHAR(50) NOT NULL, imagen VARCHAR(100) NOT NULL);";
 	$carrito="CREATE TABLE IF NOT EXISTS  carrito (item_id SERIAL PRIMARY KEY, client_id int NOT NULL, product_id int NOT NULL, fecha date);";
 	try{
         $consulta_prod = $pdo->prepare($productos);

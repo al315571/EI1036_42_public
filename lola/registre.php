@@ -6,6 +6,7 @@
 </head>
 <body>
 	<?php include 'includes/nav.php'; ?>
+	<?php include 'includes/carrito.php'; ?>
 	<?php include 'includes/header.php'; ?>
 	<div class="content"> 
 		<section class="acceso">
@@ -41,5 +42,5 @@
 	<?php include 'includes/footer.php'; ?>
 
 </body>
-
+<script src="assets/js/carrito.js"></script>
 </html>

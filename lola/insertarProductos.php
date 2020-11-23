@@ -13,27 +13,28 @@
 	<?php include 'includes/nav.php'; ?>
 	<?php include 'includes/carrito.php'; ?>
 	<?php include 'includes/header.php'; ?>
+	<?php include 'acciones/productos.php'; ?>
 	<div class="content"> 
 		<section class="acceso">
 			<h1 class="titulo"> Registro </h1>
-			<form class="formulario" action="?action=upload" method="post" enctype="multipart/form-data">
-				<div class="agrupado">
-					<label for="nombre">Nombre</label>
-					<input type="text" name="nombre" placeholder="nombre">
-				</div>
+			<form class="formulario" action="?accion=subirimagen" method="post" enctype="multipart/form-data">
 				<div class="flotante" id="flotante">
 					<div class="agrupado">
 						<input class="eliminar-small" value="X" onclick="cerrar()">
-						<label for="nombre">Foto</label>
-						<input type="file" accept="image/*" name="foto" placeholder="nombre" onchange="handleFiles()">
+						<label for="producto" id="lblproducto">Producto</label>
+						<input type="text" name="producto" id="producto">
+						<label for="url" id="lblurl">URL</label>
+						<input type="text" name="url" id="url">
+						<label for="foto">Foto</label>
+						<input type="file" accept="image/*" name="tmp_file" id="foto" onchange="cargar(this)">
 						<canvas id="canvas" width="200" height="100"></canvas>
 						<div class="agrupado"> 
-							<input type="submit" class="clasico" value="enviar">
+							<input type="submit" class="clasico" value="enviar" onclick="eliminar()">
 						</div>
 					</div>
 				</div>
 				<div class="agrupado"> 
-					<input class="clasico" value="fichero" onclick="mostrar()">
+					<input class="clasico" value="fichero" onclick="mostrar()" >
 				</div>
 			</form>
 		</section>
@@ -42,26 +43,6 @@
 	<?php include 'includes/footer.php'; ?>
 
 </body>
-	<script type="text/javascript">
-		function mostrar() {
-			document.getElementById('flotante').style.display = 'block';
-		}
-		function cerrar() {
-			document.getElementById('flotante').style.display = 'none';
-		}
-		function carrito() {
-			document.getElementById('carrito').style.display = 'block';
-		}
-		function carrito_off() {
-			document.getElementById('carrito').style.display = 'none';
-		}
-		function handleFiles(e)	{
-			let ctx	= document.getElementById('canvas').getContext('2d');
-			let img	= new Image;
-			img.src	= URL.createObjectURL(e.target.files[0]);
-			img.onload= function()	{
-				ctx.drawImage(img,	20,20);
-			}
-}
-	</script>
+	<script src="assets/js/insertarProducto.js"></script>
+	<script src="assets/js/carrito.js"></script>
 </html>

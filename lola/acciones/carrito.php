@@ -43,6 +43,14 @@ include('conexion.php');
 			case 'listar':
 				listarCarrito();
 				break;
+			case 'comprarCesta':
+				$productos = explode(",",$_REQUEST['productos']);
+				$cliente = 5;
+				for($i = 0; $i < count($productos)-1; $i++) {
+					insertarEnCarrito($cliente,$productos[$i]);
+				}
+
+				break;
 			default:
 				echo "Error 404 not found";
 				break;

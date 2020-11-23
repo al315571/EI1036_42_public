@@ -294,5 +294,28 @@
 	 		background-color: #1C5679;
 	 	}
 
+	 	.producto_carrito {
+	 		list-style:none;
+	 		padding: 5px;
+	 	}
+
+	 	.carrito-eliminar-small {
+			background-color: #D36E70;
+			border: none;
+			color: white;
+			width: 5%;
+			text-decoration: none;
+			cursor: pointer;
+			display: inline-flex;
+			text-align: center;
+			border-radius: 20px;
+			margin-right: 20px;
+			float: right;
+
+		}
+		.carrito-eliminar-small:hover, .carrito-eliminar-small:hover {
+			background-color: #D32B02;
+		}
+
 
 	 	/* FIN ESTILOS CARRITO DE COMPRA */

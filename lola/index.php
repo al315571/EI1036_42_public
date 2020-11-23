@@ -6,6 +6,7 @@
 </head>
 <body>
 	<?php include 'includes/nav.php'; ?>
+	<?php include 'includes/carrito.php'; ?>
 	<?php include 'includes/header.php'; ?>
 	<div class="content"> 
 		<section class="presentacion">
@@ -31,15 +32,15 @@
 				<div class="tabla-65"> 
 					<div>
 						<h2 class="subtitulo">Como lo hacemos</h2>
-						<p class="text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  </p>
+						<p class="text">Lorem ipsum Lorem ipsum Lorem </p>
 					</div>
 				</div>
-				<div class="tabla-35"><p>ALKSJDALKSDJK </p></div>
+				<div class="tabla-35"><p>copyright (©)</p></div>
 			</div>
 		</section>
 	</div>
 	<?php include 'includes/footer.php'; ?>
 
 </body>
-
+<script src="assets/js/carrito.js"></script>
 </html>
