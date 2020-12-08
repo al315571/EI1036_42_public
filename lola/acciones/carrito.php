@@ -9,6 +9,7 @@ include('conexion.php');
 		if (1>$result) {
 			echo "Problema con la insercion del producto en el carrito";
 		}
+		echo "Productos comprados corractamente";
 	}
 	
 	function eliminarDelCarrito($producto) {

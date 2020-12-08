@@ -113,6 +113,12 @@
 			display: inline-block;
 		}
 
+		.tabla-scroll {
+			width: 100%;
+			overflow-x: scroll;
+			display: flex;
+		}
+
 		.proyectos {
 			background: #ebedef;
 		}
@@ -205,7 +211,7 @@
 			border: 1px solid #ccc;
 			border-radius: 4px;
 		}
-		input[type=text], input[type=email], input[type=password] {
+		input[type=text], input[type=email], input[type=password],input[type=datalist] {
 		    padding: 0;
 		    margin:0;
 		    vertical-align: bottom;
@@ -315,6 +321,12 @@
 		}
 		.carrito-eliminar-small:hover, .carrito-eliminar-small:hover {
 			background-color: #D32B02;
+		}
+
+		.centrado {
+	 		width: 60%;
+	 		margin: auto;
+	 		border-radius: 20px;
 		}
 
 

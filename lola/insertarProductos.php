@@ -16,17 +16,24 @@
 	<?php include 'acciones/productos.php'; ?>
 	<div class="content"> 
 		<section class="acceso">
-			<h1 class="titulo"> Registro </h1>
-			<form class="formulario" action="?accion=subirimagen" method="post" enctype="multipart/form-data">
+			<h1 class="titulo"> Inserta un producto </h1>
+			<form class="formulario" action="?accion=subirproducto" method="post">
+				<center>
+					<label for="producto" id="lblproducto">Producto</label>
+					<input type="text" name="producto" id="s_producto" required="">
+					<input type="hidden" name="url" id="url" value="<?php if (isset($_FILES["subir"]["name"]))echo "assets/img/".$_FILES["subir"]["name"] ?>" required="">
+					<div class="agrupado"> 
+							<input type="submit" class="clasico" value="enviar" onclick="eliminar()">
+					</div>
+				</center>
+			</form>
+			<form action="?action=subirimagen" method="post" enctype="multipart/form-data" id="form_imagen"> 
 				<div class="flotante" id="flotante">
 					<div class="agrupado">
 						<input class="eliminar-small" value="X" onclick="cerrar()">
-						<label for="producto" id="lblproducto">Producto</label>
-						<input type="text" name="producto" id="producto">
-						<label for="url" id="lblurl">URL</label>
-						<input type="text" name="url" id="url">
+						
 						<label for="foto">Foto</label>
-						<input type="file" accept="image/*" name="tmp_file" id="foto" onchange="cargar(this)">
+						<input type="file" accept="image/*" name="subir" id="foto" onchange="cargar(this)">
 						<canvas id="canvas" width="200" height="100"></canvas>
 						<div class="agrupado"> 
 							<input type="submit" class="clasico" value="enviar" onclick="eliminar()">

@@ -32,10 +32,10 @@
 				<div class="tabla-65"> 
 					<div>
 						<h2 class="subtitulo">Como lo hacemos</h2>
-						<p class="text">Lorem ipsum Lorem ipsum Lorem </p>
+						<p class="text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  </p>
 					</div>
 				</div>
-				<div class="tabla-35"><p>copyright (©)</p></div>
+				<div class="tabla-35"><p>ALKSJDALKSDJK </p></div>
 			</div>
 		</section>
 	</div>

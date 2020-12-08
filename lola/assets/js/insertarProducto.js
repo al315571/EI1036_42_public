@@ -1,7 +1,9 @@
 window.onload = function() {
+	alert("funciona");
   if (localStorage.getItem("imagen")) {
   	document.getElementById('flotante').style.display = 'block';
   	document.getElementById('url').value = localStorage.getItem("imagen");
+  	document.getElementById('s_producto').value = localStorage.getItem("españa");
   }
 };
 function mostrar() {
@@ -9,13 +11,8 @@ function mostrar() {
 		document.getElementById('flotante').style.display = 'block';
   		document.getElementById('url').value = localStorage.getItem("imagen");
 	} else {
-		document.getElementById('flotante').style.display = 'block';
-		document.getElementById('producto').style.display = 'none';
-		document.getElementById('url').style.display = 'none';
-		document.getElementById('lblproducto').style.display = 'none';
-		document.getElementById('lblurl').style.display = 'none';	
+		document.getElementById('flotante').style.display = 'block';		
 	}
-	
 }
 
 function cerrar() {
@@ -31,11 +28,13 @@ function eliminar() {
 function cargar(e) {
 	let ctx	= document.getElementById('canvas').getContext('2d');
 	let img	= new Image;
-	img.src	= URL.createObjectURL(e.files[0]);
+	img.src	= URL.createObjectURL("./assets/img/"+e.files[0].name);
+	producto = document.getElementById('s_producto').value;
 	if(e.files[0].size < 2048) {
 		img.onload= function()	{
 			ctx.drawImage(img,	20,20);
 			localStorage.setItem("imagen",img.src);
+			localStorage.setItem("españa",producto)
 		}
 	} else {
 		document.getElementById('foto').value = "";
